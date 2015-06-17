@@ -1,0 +1,12 @@
+{
+  "DEVELOPER_NOTE": "do not access this file directly in your code, require config/tokenConfig.js for properly configured tokens",
+
+  "instagram": {
+    "CLIENT_ID": "FILL_ME_IN",
+    "CLIENT_SECRET": "FILL_ME_IN",
+    "WEBSITE_URL": "FILL_ME_IN",
+    "REDIRECT_URI": "FILL_ME_IN",
+    "SUPPORT_EMAIL": "FILL_ME_IN",
+    "INSTAGRAM_AUTH": "https://api.instagram.com/oauth/authorize/?client_id=CLIENT_ID&redirect_uri=REDIRECT_URI&response_type=code"
+  }
+}

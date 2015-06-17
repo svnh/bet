@@ -1,4 +1,8 @@
-module.exports = function(app) {
+module.exports = function(app, express) {
+  var cookieParser = require('cookie-parser');
+
+  app.use(cookieParser());
+
   app.use(function(err, req, res, next){
     if(!err) return next();
 

@@ -4,6 +4,7 @@
   "description": "bet game",
   "main": "server.js",
   "scripts": {
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,6 +18,9 @@
   },
   "homepage": "https://github.com/svnh/bet",
   "dependencies": {
-    "express": "^4.12.3"
+    "app-module-path": "^1.0.2",
+    "cookie-parser": "^1.3.5",
+    "express": "^4.12.3",
+    "instagram-node": "^0.5.7"
   }
 }

@@ -1,2 +1,8 @@
+# npm
 node_modules
+
+# Node.js
 npm-debug.log
+
+# Config
+app/config/thirdPartyTokens.json
