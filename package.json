@@ -1,0 +1,22 @@
+{
+  "name": "bet",
+  "version": "0.0.0",
+  "description": "bet game",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/svnh/bet.git"
+  },
+  "author": "Savannah Kunovsky (svnh.github.io)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/svnh/bet/issues"
+  },
+  "homepage": "https://github.com/svnh/bet",
+  "dependencies": {
+    "express": "^4.12.3"
+  }
+}
