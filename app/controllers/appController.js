@@ -13,8 +13,23 @@ module.exports = {
       if(err) return res.send('Authentication failed with', err);
 
       res.cookie('instagram', result, { maxAge: 60 * 60 * 1000 }); // maxAge 1 hour
-      res.redirect('/');
+      res.redirect('/instagram');
     });
+  },
+
+  followers: function(req, res) {
+    var followers = [];
+
+    var addFollowers = function(err, users, pagination, remaining, limit) {
+      if(err) return res.status(500).end('Error finding followers', err);
+
+      followers = followers.concat(users);
+      if(pagination.next) return pagination.next(addFollowers);
+
+      res.send(followers);
+    };
+
+    instagram.user_followers(req.cookies.instagram.user.id, addFollowers);
   },
 
   home: function(req, res, next) {
